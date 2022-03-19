@@ -1,0 +1,90 @@
+public class Helloba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Hola mundo");
+	}
+
+}
+
+----------
+
+//Trabajo Hola mundo
+
+public class Helloba {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Hola mundo");
+	
+	celular objcelular = new celular ();
+	objcelular.llamar("Benja");
+	
+	}
+
+}
+
+----------
+
+//Trabajo Celular
+
+public class celular {
+        //atributos de la clase
+	private String marca;
+	private String modelo;
+	private String color;
+	
+	
+	// constructor con parámetros
+	public celular(String marca, String modelo, String color) {
+		this.marca = marca;
+		this.modelo = modelo;
+		this.color = color;
+	}
+	
+	//constructor vacio
+	public celular(){
+		
+	}
+	
+	// método hacer llamada
+	public void llamar(String nombre){
+		System.out.println("LLamando a "+nombre);
+	}
+	
+	//método finalizar llamada
+	public void cortarLlamada(){
+		System.out.println("Llamada finalizada");
+	}
+	
+	//método para informar de la características del celular
+ 
+	public void informarCaracteristicas(){
+		System.out.println(String.format("Celular Marca: %s", marca));
+		System.out.println(String.format("Celular  Modelo: %s", modelo));
+		System.out.println(String.format("Celular Color: %s", color));		
+	}
+	
+	//getters y Setters
+	public String getMarca() {
+		return marca;
+	}
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+	public String getModelo() {
+		return modelo;
+	}
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+}
+
